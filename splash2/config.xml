@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="cz.inited.tests.base" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>Test - base</name>
-    <description>INITED Test base app</description>
+<widget id="cz.inited.tests.splash2" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Test - splash1</name>
+    <description>INITED Tests splash</description>
     <author email="info@inited.cz" href="http://inited.cz">INITED Solutions s.r.o.</author>
     <content src="index.html" />
     <access origin="*" />
@@ -11,5 +11,7 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
+    <preference name="AutoHideSplashScreen" value="false" />
+    <plugin name="cordova-plugin-splashscreen" spec="^5.0.2" />
     <engine name="android" spec="~7.1.4" />
 </widget>
