@@ -1,0 +1,45 @@
+<html>
+<head>
+    <script src="cordova.js"></script>
+</head>
+<body style="background-color: rgba(0,0,0,0.01)">
+<script>
+
+function onDeviceReady() {
+    console.log("onDeviceReady");
+    
+    start();
+}
+
+function start() {
+    window.QRScanner.show();
+    window.QRScanner.scan(displayContents);
+}
+
+function stop() {
+    window.QRScanner.destroy(function(status) {
+        console.log(status);
+    });
+}
+
+function displayContents(err, text) {
+    if(err) {
+        // an error occurred, or the scan was canceled (error code 6)
+        alert("Error:" + err);
+    } else {
+        // The scan completed, display the contents of the QR code:
+        alert(text);
+        window.QRScanner.scan(displayContents);
+    }
+}
+
+document.addEventListener("deviceready", onDeviceReady, false);
+
+</script>
+<h1>QR code scanner</h1>
+
+<button onClick="start()">Start</button>
+<button onClick="stop()">Stop</button>
+
+</body>
+</html>

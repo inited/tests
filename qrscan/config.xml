@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="cz.inited.tests.qrscan1" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Test - QR Scan</name>
+    <description>INITED QR Scan app</description>
+    <author email="info@inited.cz" href="http://inited.cz">INITED Solutions s.r.o.</author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <plugin name="cordova-plugin-qrscanner" spec="^2.6.0" />
+</widget>
