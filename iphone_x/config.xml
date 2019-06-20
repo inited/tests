@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="cz.inited.tests.iphonex" version="0.0.1" xmlns="http://www.w3.org/ns/widgets">
+    <name>Test - iPhoneX</name>
+    <description>Test iPhone X screen</description>
+    <author email="info@inited.cz" href="http://inited.cz">INITED Solutions s.r.o.</author>
+    <content src="index.html" />
+    <access origin="*" />
+    <platform name="ios">
+        <splash height="2732" src="resources/Default@2x~universal~anyany.png" width="2732" />
+    </platform>
+    <engine name="ios" spec="~4.5.5" />
+</widget>
